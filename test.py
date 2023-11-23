@@ -1,0 +1,5 @@
+x = "01734ba4a09659c8c542c8d0d314693c633583b99efe15b20f3d06439a0d1b1dc298013e572d51fbd844b32c3a8c0b294f571bcbc34e23780bfc0db210e0728c60260000966effdbc92636e642dd4ae61070944e3d987d1ef94615d76b2cc55885be3329ffc0ba9e7b4bd716a0b92541f173177490c732748db01e26efe9a972713880e0"
+chunks, chunk_size = len(x), len(x)//3
+out = [ x[i:i+chunk_size] for i in range(0, chunks, chunk_size) ]
+
+print(out)
